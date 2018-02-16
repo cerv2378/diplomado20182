@@ -1,6 +1,8 @@
 # Diplomado 2018-2
 
-ejercicios??
+Rios Valdes Christia Erick
+
+
 
 
 

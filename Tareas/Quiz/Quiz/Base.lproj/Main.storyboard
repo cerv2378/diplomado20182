@@ -18,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N4-Hr-5Gs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N4-Hr-5Gs">
                                 <rect key="frame" x="175" y="74" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-0l-8gp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-0l-8gp">
                                 <rect key="frame" x="138" y="135" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDE-uf-oeU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-xL-GKG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-xL-GKG">
                                 <rect key="frame" x="175" y="245" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-cN-7OJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-cN-7OJ">
                                 <rect key="frame" x="141" y="286" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
@@ -49,7 +49,11 @@
                         <constraints>
                             <constraint firstItem="tbB-xL-GKG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yE-aL-Gxe"/>
                             <constraint firstItem="4N4-Hr-5Gs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAf-O7-Mdh"/>
+                            <constraint firstItem="Re1-cN-7OJ" firstAttribute="top" secondItem="tbB-xL-GKG" secondAttribute="bottom" constant="20" id="QlF-HB-mQc"/>
+                            <constraint firstItem="tbB-xL-GKG" firstAttribute="top" secondItem="uqI-0l-8gp" secondAttribute="bottom" constant="80" id="X5Y-2W-Sbm"/>
+                            <constraint firstItem="tbB-xL-GKG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="245" id="f3c-aD-oHo"/>
                             <constraint firstItem="uqI-0l-8gp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgI-rz-VAX"/>
+                            <constraint firstItem="4N4-Hr-5Gs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="n95-J0-rma"/>
                             <constraint firstItem="Re1-cN-7OJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xN8-yO-eRh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

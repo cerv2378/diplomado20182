@@ -18,40 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suS-yt-iWV">
-                                <rect key="frame" x="164" y="314" width="46" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFL-Oz-VSy">
-                                <rect key="frame" x="69" y="378" width="237" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFL-Oz-VSy">
+                                <rect key="frame" x="151" y="304" width="73" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXL-MB-LpD">
-                                <rect key="frame" x="164" y="314" width="46" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suS-yt-iWV">
+                                <rect key="frame" x="152" y="257" width="72" height="30"/>
+                                <state key="normal" title="Touch Me!"/>
                                 <connections>
-                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xcm-i2-7WE"/>
+                                    <action selector="aoutletButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGU-pf-uv7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="inJ-cH-c46">
-                                <rect key="frame" x="69" y="378" width="237" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="suS-yt-iWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2p3-hX-5Vf"/>
+                            <constraint firstItem="LFL-Oz-VSy" firstAttribute="top" secondItem="suS-yt-iWV" secondAttribute="bottom" constant="17" id="57B-WJ-PRd"/>
+                            <constraint firstItem="suS-yt-iWV" firstAttribute="trailing" secondItem="LFL-Oz-VSy" secondAttribute="trailing" id="Qid-0u-MaJ"/>
+                            <constraint firstItem="suS-yt-iWV" firstAttribute="centerX" secondItem="LFL-Oz-VSy" secondAttribute="centerX" id="mEW-2h-h3N"/>
+                            <constraint firstItem="suS-yt-iWV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="237" id="nKM-EM-Bdf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="aoutletButton" destination="suS-yt-iWV" id="s39-vU-gAo"/>
-                        <outlet property="outletText" destination="LFL-Oz-VSy" id="Xgy-eA-4cH"/>
+                        <outlet property="outtletText" destination="LFL-Oz-VSy" id="iac-hk-kq8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

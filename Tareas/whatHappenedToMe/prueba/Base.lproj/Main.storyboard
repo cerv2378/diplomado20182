@@ -28,7 +28,7 @@
                                 <rect key="frame" x="152" y="257" width="72" height="30"/>
                                 <state key="normal" title="Touch Me!"/>
                                 <connections>
-                                    <action selector="aoutletButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGU-pf-uv7"/>
+                                    <action selector="aoutletButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4x2-Up-tFc"/>
                                 </connections>
                             </button>
                         </subviews>

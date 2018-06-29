@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C60C7D0520E5C8CE00F8216F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60C7D0420E5C8CE00F8216F /* Localizable.strings */; };
+		C61C62B920E4BB0600D9DBDC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61C62B820E4BB0600D9DBDC /* MapKit.framework */; };
+		C61C62BB20E4BD6700D9DBDC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61C62BA20E4BD6700D9DBDC /* MapViewController.swift */; };
 		C6B253FC20525B3700ED8243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B253FB20525B3700ED8243 /* AppDelegate.swift */; };
 		C6B253FE20525B3700ED8243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B253FD20525B3700ED8243 /* ViewController.swift */; };
 		C6B2540120525B3700ED8243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B253FF20525B3700ED8243 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C60C7D0120E5B59E00F8216F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C60C7D0220E5B5D300F8216F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		C60C7D0320E5B5D300F8216F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C60C7D0420E5C8CE00F8216F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C61C62B820E4BB0600D9DBDC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C61C62BA20E4BD6700D9DBDC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C6B253F820525B3700ED8243 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B253FB20525B3700ED8243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B253FD20525B3700ED8243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +40,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61C62B920E4BB0600D9DBDC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C61C62B720E4BB0500D9DBDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61C62B820E4BB0600D9DBDC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6B253EF20525B3600ED8243 = {
 			isa = PBXGroup;
 			children = (
 				C6B253FA20525B3700ED8243 /* WorldTrotter */,
 				C6B253F920525B3700ED8243 /* Products */,
+				C61C62B720E4BB0500D9DBDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +79,8 @@
 				C6B253FD20525B3700ED8243 /* ViewController.swift */,
 				C6B2540D205283D900ED8243 /* ConversionViewController.swift */,
 				C6B253FF20525B3700ED8243 /* Main.storyboard */,
+				C60C7D0420E5C8CE00F8216F /* Localizable.strings */,
+				C61C62BA20E4BD6700D9DBDC /* MapViewController.swift */,
 				C6B2540220525B3700ED8243 /* Assets.xcassets */,
 				C6B2540420525B3700ED8243 /* LaunchScreen.storyboard */,
 				C6B2540720525B3700ED8243 /* Info.plist */,
@@ -94,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = RV2368;
 				TargetAttributes = {
 					C6B253F720525B3700ED8243 = {
@@ -127,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B2540620525B3700ED8243 /* LaunchScreen.storyboard in Resources */,
+				C60C7D0520E5C8CE00F8216F /* Localizable.strings in Resources */,
 				C6B2540320525B3700ED8243 /* Assets.xcassets in Resources */,
 				C6B2540120525B3700ED8243 /* Main.storyboard in Resources */,
 			);
@@ -142,6 +164,7 @@
 				C6B253FE20525B3700ED8243 /* ViewController.swift in Sources */,
 				C6B2540E205283D900ED8243 /* ConversionViewController.swift in Sources */,
 				C6B253FC20525B3700ED8243 /* AppDelegate.swift in Sources */,
+				C61C62BB20E4BD6700D9DBDC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +175,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C6B2540020525B3700ED8243 /* Base */,
+				C60C7D0120E5B59E00F8216F /* en */,
+				C60C7D0220E5B5D300F8216F /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -160,6 +185,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C6B2540520525B3700ED8243 /* Base */,
+				C60C7D0320E5B5D300F8216F /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +197,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -181,6 +208,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -188,6 +216,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -215,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -228,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -238,6 +268,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -245,6 +276,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -266,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -281,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 965DB656RH;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cerv2378.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 965DB656RH;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cerv2378.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
